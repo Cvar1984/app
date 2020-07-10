@@ -2,7 +2,8 @@
   "name": "cvar1984/app",
   "description": "App Templates",
   "type": "application",
-  "minimum-stability": "dev",
+  "minimum-stability": "stable",
+  "prefer-stable": true,
   "license": "MIT",
   "authors": [
     {
