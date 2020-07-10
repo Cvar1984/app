@@ -1,0 +1,19 @@
+{
+  "name": "cvar1984/app",
+  "description": "App Templates",
+  "type": "application",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Cvar1984",
+      "email": "gedzsarjuncomuniti@gmail.com",
+      "role": "developer"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Cvar1984\\":"src/"
+    }
+  }
+}
