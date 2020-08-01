@@ -2,14 +2,14 @@
 
 namespace Cvar1984\App;
 
-use Cvar1984\App\Exception\NotFoundException;
+use Exception\NotFoundException;
 
 /**
  * Class: Event dispatcher
  *
  * @abstract
  */
-abstract class Event
+class Event
 {
     /**
      * callables
@@ -38,7 +38,7 @@ abstract class Event
     public static function call(string $name, $args = false)
     {
         if (!array_key_exists($name, self::$callables)) {
-            throw new MethodNotFoundException($name);
+            throw new NotFoundException($name);
         }
         return call_user_func(self::$callables[$name], $args);
     }
